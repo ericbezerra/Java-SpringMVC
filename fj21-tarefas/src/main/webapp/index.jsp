@@ -5,9 +5,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Spring MVC Tutorial</title>
+<style type="text/css">
+body{
+	text-align: center;
+	margin: 20%;
+}
+</style>
 </head>
 <body>
 	<h1>Hello SMVC</h1>
-	<a href="hello">Hello</a>
+	
+	<a href="formulario.jsp">Entrar</a>
 </body>
 </html>

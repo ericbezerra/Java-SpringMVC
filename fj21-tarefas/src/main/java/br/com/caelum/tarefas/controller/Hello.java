@@ -10,6 +10,6 @@ public class Hello {
 	public String execute(){
 		System.out.println("Controller ok");
 		
-		return "index.jsp";
+		return "index";
 	}
 }
