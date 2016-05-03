@@ -47,6 +47,27 @@
 			<version>1.2</version>
 		</dependency>
 
+		<!-- Hibernate Validator -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.2.4.Final</version>
+		</dependency>
+
+		<!-- Jboss Loggin 3 -->
+		<dependency>
+			<groupId>org.jboss.logging</groupId>
+			<artifactId>jboss-logging</artifactId>
+			<version>3.2.1.Final</version>
+		</dependency>
+
+		<!-- Validation API -->
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>
+
 		<!-- ITEXT -->
 		<dependency>
 			<groupId>com.lowagie</groupId>
@@ -67,6 +88,6 @@
 	<build>
 		<finalName>fj21-tarefas</finalName>
 	</build>
-	
-	
+
+
 </project>

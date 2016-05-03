@@ -13,9 +13,6 @@ body{
 </style>
 </head>
 <body>
-	<h1>Hello SMVC</h1>
-	
-	<a href="novaTarefa">Entrar</a>
-	
+	<h2>Olá mundo com Spring MVC!</h2>
 </body>
 </html>
