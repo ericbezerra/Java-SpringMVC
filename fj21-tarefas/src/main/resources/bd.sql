@@ -11,6 +11,10 @@ create table tarefas (
 );
 
 insert into tarefas (descricao, finalizado, dataFinalizacao) values ('Teste1', 1, now());
-insert into tarefas (descricao, finalizado, dataFinalizacao) values ('Teste2', 1, now());
-insert into tarefas (descricao, finalizado, dataFinalizacao) values ('Teste3', 1, now());
-insert into tarefas (descricao, finalizado, dataFinalizacao) values ('Teste4', 1, now());
+insert into tarefas (descricao, finalizado, dataFinalizacao) values ('Teste2', 2, now());
+insert into tarefas (descricao, finalizado, dataFinalizacao) values ('Teste3', 3, now());
+insert into tarefas (descricao, finalizado, dataFinalizacao) values ('Teste4', 4, now());
+insert into tarefas (descricao, finalizado) values ('Teste1', 5);
+insert into tarefas (descricao, finalizado) values ('Teste2', 6);
+insert into tarefas (descricao, finalizado) values ('Teste3', 7);
+insert into tarefas (descricao, finalizado) values ('Teste4', 8);

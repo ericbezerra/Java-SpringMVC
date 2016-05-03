@@ -21,7 +21,7 @@ body {
 	<br />
 	<br />
 
-	<table border="1">
+	<table border="1" align="center">
 		<tr>
 			<th>Id</th>
 			<th>Descrição</th>
@@ -38,8 +38,15 @@ body {
 				<c:if test="${tarefa.finalizado eq true}">
 					<td>Finalizado</td>
 				</c:if>
-				<td><fmt:formatDate value="${tarefa.dataFinalizacao.time}"
+				<c:choose>
+					<c:when test="${tarefa.dataFinalizacao.time eq null}">
+					<td>Sem data de Finalizaçao</td>
+					</c:when>
+					<c:otherwise>
+						<td><fmt:formatDate value="${tarefa.dataFinalizacao.time}"
 						pattern="dd/MM/yyyy" /></td>
+					</c:otherwise>
+				</c:choose>
 			</tr>
 		</c:forEach>
 	</table>
