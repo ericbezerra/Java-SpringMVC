@@ -36,25 +36,5 @@ public class TarefasController {
 		model.addAttribute("tarefas", dao.lista());
 		return "tarefa/lista";
 	}
-	
-	@RequestMapping("")
-	public String altera(Tarefa tarefa){
-		JdbcTarefaDao dao = new JdbcTarefaDao();
-		dao.altera(tarefa);
-		return "foward:listaTarefas";
-	}
-	
-	@RequestMapping("removeTarefa")
-	public String remove(Tarefa tarefa){
-		JdbcTarefaDao dao = new JdbcTarefaDao();
-		dao.remove(tarefa);
-		return "forward:listaTarefas";
-	}
-	
-	@RequestMapping("mostraTarefa")
-	public String mostra(Long id, Model model){
-		JdbcTarefaDao dao = new JdbcTarefaDao();
-		model.addAttribute("tarefa", dao.buscaPorId(id));
-		return "tarefa/mostra";
-	}
+
 }

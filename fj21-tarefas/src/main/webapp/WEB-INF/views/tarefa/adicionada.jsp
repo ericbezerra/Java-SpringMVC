@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
@@ -6,15 +7,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Tarefa Adicionada</title>
-<style type="text/css">
-body{
-	text-align: center;
-	margin: 20%;
-}
-</style>
 </head>
 <body>
+	<c:import url="../layouts/cabacalho.jsp"/>
 	<h3><fmt:message key="tarefa.adicionada.com.sucesso"/></h3>
 	<a href="http://localhost:8080/fj21-tarefas/">Home</a>
+	<c:import url="../layouts/rodape.jsp"/>
 </body>
 </html>

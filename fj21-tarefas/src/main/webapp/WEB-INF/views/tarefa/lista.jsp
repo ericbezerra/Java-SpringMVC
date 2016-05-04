@@ -7,15 +7,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Lista</title>
-<style type="text/css">
-body {
-	text-align: center;
-	margin: 20%;
-}
-</style>
 </head>
 <body>
-
+<c:import url="../layouts/cabecalho.jsp"/>
 	<a href="novaTarefa">Criar nova tarefa</a>
 
 	<br />
@@ -50,5 +44,6 @@ body {
 			</tr>
 		</c:forEach>
 	</table>
+	<c:import url="../layouts/rodape.jsp"/>
 </body>
 </html>
