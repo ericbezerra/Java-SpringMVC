@@ -9,7 +9,7 @@
 <title>Tarefa Adicionada</title>
 </head>
 <body>
-	<c:import url="../layouts/cabacalho.jsp"/>
+	<c:import url="../layouts/cabecalho.jsp"/>
 	<h3><fmt:message key="tarefa.adicionada.com.sucesso"/></h3>
 	<a href="http://localhost:8080/fj21-tarefas/">Home</a>
 	<c:import url="../layouts/rodape.jsp"/>
