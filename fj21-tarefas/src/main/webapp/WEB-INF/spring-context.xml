@@ -22,4 +22,6 @@
 		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
 		<property name="basename" value="/WEB-INF/mensagens" />
 	</bean>
+	
+	<mvc:default-servlet-handler/>
 </beans>
