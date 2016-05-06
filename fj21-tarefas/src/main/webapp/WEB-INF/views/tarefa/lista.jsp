@@ -52,6 +52,8 @@
 								pattern="dd/MM/yyyy" /></td>
 					</c:otherwise>
 				</c:choose>
+				<td><a href="removeTarefa?id=${tarefa.id}">Remover</a></td>
+				<td><a href="mostraTarefa?id=${tarefa.id}">Alterar</a></td>
 			</tr>
 		</c:forEach>
 	</table>
