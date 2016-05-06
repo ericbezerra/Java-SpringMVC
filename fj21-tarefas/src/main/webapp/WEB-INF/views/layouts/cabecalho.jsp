@@ -9,6 +9,11 @@ body {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	
+	/*background-image: url("resources/assets/images/bg.jpg");*/
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
 }
 
 a:link {
