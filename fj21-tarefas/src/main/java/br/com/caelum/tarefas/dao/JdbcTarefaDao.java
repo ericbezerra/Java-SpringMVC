@@ -8,18 +8,23 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import br.com.caelum.tarefas.jdbc.ConnectionFactory;
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
 import br.com.caelum.tarefas.model.Tarefa;
 
 
 
+@Repository
 public class JdbcTarefaDao {
 	private final Connection connection;
 
-	
-	public JdbcTarefaDao() {
+	@Autowired
+	public JdbcTarefaDao(DataSource dataSource) {
 		try {
-			this.connection = new ConnectionFactory().getConnection();
+			this.connection = dataSource.getConnection();
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}

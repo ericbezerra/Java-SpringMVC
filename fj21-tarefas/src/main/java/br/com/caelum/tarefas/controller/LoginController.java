@@ -10,7 +10,12 @@ import br.com.caelum.tarefas.model.Usuario;
 
 @Controller
 public class LoginController {
-
+	private final JdbcUsuarioDao dao;
+	
+	public LoginController(JdbcUsuarioDao dao) {
+		this.dao = dao;
+	}
+	
 	@RequestMapping("loginForm")
 	public String loginForm(){
 		
@@ -18,7 +23,7 @@ public class LoginController {
 	}
 	@RequestMapping("efetuaLogin")
 	public String efetuaLogin(Usuario usuario, HttpSession session){
-		if(new JdbcUsuarioDao().existeUsuario(usuario)){
+		if(dao.existeUsuario(usuario)){
 			session.setAttribute("usuarioLogado", usuario);
 			return "menu";
 		}
