@@ -7,6 +7,7 @@ import java.sql.SQLException;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import br.com.caelum.tarefas.model.Usuario;
@@ -15,6 +16,7 @@ import br.com.caelum.tarefas.model.Usuario;
 public class JdbcUsuarioDao {
 	private final Connection connection;
 
+	@Autowired
 	public JdbcUsuarioDao(DataSource dataSource) {
 		try {
 			this.connection = dataSource.getConnection();
